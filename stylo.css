@@ -74,6 +74,6 @@ h1 .go-back {
     }
 
     .go-back a {
-        font-size: 48px; /* Adjust for larger screens */
+        font-size: 48px; 
     }
 }
