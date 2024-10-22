@@ -1,0 +1,83 @@
+body {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 36px;
+    color: black;
+    margin: 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 .go-back {
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+.go-back a {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-details a {
+    color: #007BFF;
+}
+
+.bio {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.cv div {
+    padding: 10px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+}
