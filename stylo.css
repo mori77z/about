@@ -42,7 +42,7 @@ h1 .go-back {
 
 .contact-details {
     margin-top: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-details a {
@@ -52,7 +52,7 @@ h1 .go-back {
 .bio {
     margin: 40px auto;
     max-width: 600px;
-    text-align: left;
+    text-align: center;
 }
 
 .cv {
