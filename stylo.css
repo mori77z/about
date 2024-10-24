@@ -27,6 +27,12 @@ h1 a {
     text-decoration: none;
     color: black;
 }
+h1 a:hover {
+    font-family: Georgia, serif;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 4px;
+}
 
 h1 .go-back {
     margin-left: 10px;
