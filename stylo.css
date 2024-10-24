@@ -39,6 +39,10 @@ h1 .go-back {
     font-size: 30px; /* Match the font size of h1 */
     line-height: 36px;
 }
+go-back a:hover {
+    font-family: Georgia, serif; 
+    font-style: italic;
+}
 
 .contact-details {
     margin-top: 20px;
