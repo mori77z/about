@@ -42,7 +42,7 @@ h1 .go-back {
     text-decoration: underline;
     color: black;
     cursor: pointer;
-    font-size: 30px; /* Match the font size of h1 */
+    font-size: 30px;
     line-height: 36px;
 }
 go-back a:hover {
@@ -62,9 +62,9 @@ go-back a:hover {
 .bio {
     margin: 40px auto;
     max-width: 600px;
-    text-align: block;
-    padding-left: 4px;
-    padding-right: 4px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cv {
