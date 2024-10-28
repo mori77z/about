@@ -62,7 +62,9 @@ go-back a:hover {
 .bio {
     margin: 40px auto;
     max-width: 600px;
-    text-align: center;
+    text-align: block;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .cv {
