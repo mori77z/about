@@ -3,7 +3,7 @@ body {
     background: white;
     display: flex;
     flex-direction: column;
-    font-family: Helvetica, sans-serif;
+    font-family: Instrument Sans, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -32,38 +32,32 @@ body {
     font-weight: normal;
     line-height: 36px;
     color: black;
-    font-family: 'Helvetica', 'DM Sans', sans-serif;
+    font-family: 'Funnel Display', serif;
     margin-top: 10px;
     white-space: nowrap;
     box-sizing: border-box; 
-}
-
-.logo a {
     text-decoration: none;
-    color: black;
+    cursor: pointer;
 }
 
 .logo a:hover {
-    font-family: Georgia, serif;
-    text-decoration: underline;
+    font-family: Trocchi, serif;
     font-style: italic;
     padding-right: 4px;
 }
 
 .go-back {
-    margin-left: 10px;
+    margin: 0px;
 }
 
 .go-back a {
-    text-decoration: underline;
-    color: black;
-    cursor: pointer;
-    font-size: 30px;
-    line-height: 36px;
+    text-decoration: none;
 }
-go-back a:hover {
-    font-family: Georgia, serif; 
-    font-style: italic;
+
+.name {
+    font-size: 36px;
+    color: black;
+    font-family: Instrument Serif, serif;
 }
 
 .contact-details {
@@ -100,7 +94,6 @@ go-back a:hover {
   .logo a {
         font-size: 48px;
     }
-
     .go-back a {
         font-size: 48px; 
     }
