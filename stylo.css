@@ -82,6 +82,12 @@ body {
     padding-right: 10px;
 }
 
+.language-buttons {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .cv {
     display: grid;
     grid-template-columns: 1fr 1fr;
