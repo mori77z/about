@@ -41,9 +41,13 @@ const translations = {
     <p>モーリッツ・ガウスはシュトゥットガルトで生まれ、現在はオッフェンバッハ・アム・マインで活動しており、デジタルアート、ウェブデザイン、ユーザーインターフェイス/ユーザーエクスペリエンスデザイン、そしてオブジェクトや製品のコンセプト作成の分野で活動しています。彼のアプローチは、初期インターネットの美学や都市のトレンドからインスピレーションを得ています。デジタル領域でのデザイナーとしての仕事は、インターネット上で協力的で学際的なプロジェクトを作り、誰でもどこでもいつでもアクセスできるようにします。</p>
     <p>オスバイエル技術大学で産業デザインの学士号を取得後、現在はオッフェンバッハのデザイン大学で修士号を取得しています。2023年には、モーリッツはレゲンスブルクのM26でアーティスト・イン・レジデンスとして10か月間活動する機会を得ました。</p>
   `,
-  "uk": `
+  "kyr": `
     <p>Моріц Гаус, народився в Штутгарті, а зараз працює в офенбаху на річці Майні, займається цифровим мистецтвом, веб-дизайном та дизайном користувацьких інтерфейсів/досвідом, а також створенням концепцій для об'єктів та продуктів. Його підходи черпають натхнення з естетики раннього інтернету та міських трендів. Його робота як дизайнера в цифровому просторі дозволяє створювати кооперативні та міждисциплінарні проекти в Інтернеті, доступні для будь-кого з будь-якого місця і в будь-який час.</p>
     <p>Після здобуття ступеня бакалавра з промислового дизайну в Остбайєрській технічній школі Регенсбурга, він наразі продовжує навчання на магістратурі з дизайну в Гоффенбахській вищій школі дизайну. У 2023 році Моріц мав можливість працювати 10 місяців як художник-резидент у M26 в Регенсбурзі.</p>
+  `,
+   "tr": `
+  <p>Moritz Gauss, Stuttgart doğumlu ve şu anda Offenbach am Main'da çalışan bir tasarımcıdır. Dijital sanat, web ve kullanıcı arayüzü/kullanıcı deneyimi tasarımı alanlarında faaliyet göstermektedir ve ayrıca nesneler ve ürünler için konseptler yaratmaktadır. Yaklaşımları, erken internet estetiğinden ve kentsel trendlere ilham almaktadır. Dijital alandaki tasarımcı olarak çalışması, internet üzerinde işbirlikçi ve disiplinlerarası projeler yaratmayı mümkün kılar; bu projelere her yerden, her zaman erişilebilir.</p>
+<p>Ostbayerische Technische Hochschule Regensburg'dan endüstriyel tasarım alanında lisans eğitimini tamamladıktan sonra, şu anda Hochschule für Gestaltung Offenbach'da tasarım yüksek lisansına devam etmektedir. 2023 yılında Moritz, Regensburg'daki M26'da 10 ay süresince sanatçı rezidansı olarak çalışma fırsatı bulmuştur.</p>
   `,
   "ro": `
     <p>Moritz Gauss, născut în Stuttgart și activ în prezent la Offenbach am Main, lucrează în domeniul artei digitale, al designului web și al interfeței/utilizării experienței utilizatorului, precum și în crearea de concepte pentru obiecte și produse. Abordările sale sunt inspirate de estetica internetului timpuriu și de tendințele urbane. Munca sa ca designer în spațiul digital face posibilă crearea de proiecte cooperative și interdisciplinare pe internet, accesibile oricui, din orice loc și în orice moment.</p>
