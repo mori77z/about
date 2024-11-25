@@ -23,7 +23,7 @@ body {
 .logo {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     width: 100%;
 }
 
@@ -53,14 +53,9 @@ body {
 .go-back a {
     text-decoration: none;
 }
-@font-face {
-    font-family: 'SaansTRIAL';
-    src: url('https://github.com/mori77z/mori77z.github.io/raw/refs/heads/main/assets/SaansTRIAL-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .name {
-    font-family: 'SaansTRIAL';
+    font-family: Instrument Serif, serif;
     font-size: 28px;
     color: black;
 }
