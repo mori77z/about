@@ -3,9 +3,10 @@ body {
     background: white;
     display: flex;
     flex-direction: column;
-    font-family: Instrument Sans, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fc4022;
 }
 
 
@@ -32,7 +33,6 @@ body {
     font-weight: normal;
     line-height: 36px;
     color: black;
-    font-family: 'Funnel Display', serif;
     margin-top: 10px;
     white-space: nowrap;
     box-sizing: border-box; 
@@ -41,7 +41,7 @@ body {
 }
 
 .logo a:hover {
-    font-family: Trocchi, serif;
+    font-family: Times New Roman, serif;
     font-style: italic;
     padding-right: 4px;
 }
