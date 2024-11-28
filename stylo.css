@@ -60,6 +60,15 @@ body {
     color: black;
 }
 
+.name a {
+    color: black;
+    text-decoration: none;
+}
+
+.name a:hover {
+    text-decoration: underline;
+}
+
 .contact-details {
     margin-top: 20px;
     text-align: center;
