@@ -57,6 +57,7 @@ body {
 .name {
     font-family: Instrument Serif, serif;
     font-size: 28px;
+    text-align: center;
 }
 
 .name a {
@@ -70,7 +71,6 @@ body {
 }
 
 .contact-details {
-    margin-top: 20px;
     text-align: center;
 }
 
