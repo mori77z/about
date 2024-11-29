@@ -57,23 +57,10 @@ body {
 .name {
     font-family: Instrument Serif, serif;
     font-size: 28px;
-    text-align: center;
-    margin-top: 0;
-}
-
-.name a {
-    color: black;
-    text-decoration: none;
-}
-
-.name a:hover {
-    color: black;
-    text-decoration: underline;
 }
 
 .contact-details {
     text-align: center;
-    margin-top: 0;
 }
 
 .contact-details a {
