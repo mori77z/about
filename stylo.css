@@ -64,7 +64,24 @@ body {
 }
 
 .contact-details a {
-    color: #007BFF;
+    color: black;
+}
+
+.toggle-label {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.hidden-links {
+  display: none;
+  margin-top: 10px;
+}
+
+#toggle-privat-links:checked ~ .hidden-links {
+  display: block;
 }
 
 .bio {
