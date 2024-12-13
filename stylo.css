@@ -80,7 +80,7 @@ body {
   margin-top: 10px;
 }
 
-#toggle-privat-links:checked ~ .hidden-links {
+#toggle-private-links:checked ~ .hidden-links {
   display: block;
 }
 
