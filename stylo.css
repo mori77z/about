@@ -25,6 +25,7 @@ body {
     justify-content: flex-end; 
     align-items: center;
     width: 100%;
+    padding-top: 10px;
 }
 
 .logo a {
@@ -32,7 +33,7 @@ body {
     font-weight: normal;
     line-height: 1;
     color: black;
-    margin-top: 10px;
+    letter-spacing: -2px;
     white-space: nowrap;
     box-sizing: border-box; 
     text-decoration: none;
@@ -42,6 +43,7 @@ body {
 .logo a:hover {
     font-family: Times New Roman, serif;
     font-style: italic;
+    letter-spacing: 0px;
     padding-right: 4px;
 }
 
@@ -117,10 +119,8 @@ body {
         padding: 20px;
     }
     .logo a {
-        font-size: 48px;
-    }
-    .go-back a {
-        font-size: 48px; 
+        font-size: 64px;
+        letter-spacing: -4px;
     }
     .name {
         font-size: 36px;
