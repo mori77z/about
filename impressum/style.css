@@ -56,72 +56,22 @@ body {
     text-decoration: none;
 }
 
-.name {
-    font-family: Instrument Serif, serif;
+.title {
     font-size: 28px;
-}
-
-.contact-details {
-    text-align: center;
-}
-
-.contact-details a {
-    color: black;
-}
-
-.toggle-label {
-  cursor: pointer;
-  text-decoration: underline;
-  color: black;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.hidden-links {
-  display: none;
-  margin-top: 10px;
-}
-
-#toggle-private-links:checked ~ .hidden-links {
-  display: block;
-}
-
-.bio {
-    margin: 40px auto;
-    max-width: 600px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .language-buttons {
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 40px;
-}
-
-.imprint-link {
-    text-align: center;
-}
-
-.imprint-link a {
-    font-size: 20px;
-    color: black;
-    margin-bottom: 40px;
-}
-
-.cv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 800px;
-    margin: 20px auto;
-    gap: 20px;
-}
-
-.cv div {
-    padding: 10px;
     text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.smalltext {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -132,7 +82,7 @@ body {
         font-size: 64px;
         letter-spacing: -4px;
     }
-    .name {
+    .title {
         font-size: 36px;
     }
 }
