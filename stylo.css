@@ -22,7 +22,7 @@ body {
 
 .logo {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
     padding-top: 10px;
@@ -134,5 +134,26 @@ body {
     }
     .name {
         font-size: 36px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+    .logo a {
+        color: white;
+    }
+    nav a {
+        color: white;
+    }
+    .contact-details a {
+        color: white;
+    }
+    .toggle-label {
+      color: white;
+    }
+    .imprint-link a {
+        color: white;
     }
 }
