@@ -8,14 +8,19 @@ body {
     padding: 0;
 }
 
-::selection {
-  background: yellow; /* Hintergrundfarbe der Markierung */
-  color: red; /* Textfarbe der Markierung */
+body {
+  filter: invert(1); /* Invertiert alle Farben */
 }
 
 ::-webkit-selection {
-  background: yellow !important;
-  color: red !important;
+  background: black !important;
+  color: white !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    filter: none; /* Deaktiviert die Invertierung für nicht-iOS-Geräte */
+  }
 }
 
 .header-container {
