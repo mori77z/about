@@ -13,8 +13,8 @@ body {
 }
 
 ::-webkit-selection {
-  background: black !important;
-  color: white !important;
+  background: yellow !important;
+  text-shadow: 0 0 1px red; /* Erzeugt eine Art Farb-Effekt */
 }
 
 @supports (-webkit-touch-callout: none) {
