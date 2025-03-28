@@ -8,6 +8,16 @@ body {
     padding: 0;
 }
 
+::selection {
+  background: yellow; /* Hintergrundfarbe der Markierung */
+  color: red; /* Textfarbe der Markierung */
+}
+
+::-webkit-selection {
+  background: yellow !important;
+  color: red !important;
+}
+
 .header-container {
     display: flex;
     flex-direction: column;
