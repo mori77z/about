@@ -8,19 +8,9 @@ body {
     padding: 0;
 }
 
-body {
-  filter: invert(1); /* Invertiert alle Farben */
-}
-
-::-webkit-selection {
-  background: yellow !important;
-  text-shadow: 0 0 1px red; /* Erzeugt eine Art Farb-Effekt */
-}
-
-@supports (-webkit-touch-callout: none) {
-  body {
-    filter: none; /* Deaktiviert die Invertierung für nicht-iOS-Geräte */
-  }
+::selection {
+  background: yellow; 
+  color: red; 
 }
 
 .header-container {
