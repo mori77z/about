@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-bottom: 40px;
 }
 
 ::selection {
@@ -112,7 +112,7 @@ body {
 
 .imprint-link {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .imprint-link a {
