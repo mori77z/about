@@ -92,7 +92,7 @@ body {
 
 .bio-container {
     display: flex;
-    direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
