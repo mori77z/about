@@ -90,11 +90,17 @@ body {
   display: block;
 }
 
+.bio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bio {
     max-width: 600px;
-    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify; /* für Blocksatz */
 }
 
 .language-buttons {
