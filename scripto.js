@@ -72,32 +72,29 @@ function setLanguage(lang) {
 // Set default language on page load
 window.onload = () => setLanguage('en');
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.addEventListener("click", function (e) {
-    for (let i = 0; i < 5; i++) {
-      const spade = document.createElement("div");
-      spade.className = "spade";
-      spade.innerText = "\u2660"; // ♠
+document.addEventListener("click", function (e) {
+  for (let i = 0; i < 5; i++) {
+    const spade = document.createElement("div");
+    spade.className = "spade";
+    spade.innerText = "♠";
+    
+    const size = 10 + Math.random() * 10;
+    const color = Math.random() > 0.5 ? "rgb(255, 0, 0)" : "rgb(255, 255, 0)";
+    
+    spade.style.left = `${e.clientX + (Math.random() * 40 - 20)}px`;
+    spade.style.top = `${e.clientY + (Math.random() * 40 - 20)}px`;
+    spade.style.fontSize = `${size}px`;
+    spade.style.color = color;
 
-      const size = 10 + Math.random() * 10;
-      const color = Math.random() > 0.5 ? "rgb(255, 0, 0)" : "rgb(255, 255, 0)";
+    document.body.appendChild(spade);
 
-      spade.style.left = `${e.clientX + (Math.random() * 40 - 20)}px`;
-      spade.style.top = `${e.clientY + (Math.random() * 40 - 20)}px`;
-      spade.style.fontSize = `${size}px`;
-      spade.style.color = color;
+    setTimeout(() => {
+      spade.style.opacity = "0";
+      spade.style.transform = "translateY(-20px)";
+    }, 10);
 
-      document.body.appendChild(spade);
-
-      setTimeout(() => {
-        spade.style.opacity = "0";
-        spade.style.transform = "translateY(-20px)";
-      }, 10);
-
-      setTimeout(() => {
-        spade.remove();
-      }, 800);
-    }
-  });
+    setTimeout(() => {
+      spade.remove();
+    }, 800);
+  }
 });
-
