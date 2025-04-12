@@ -78,7 +78,7 @@ function createSpades(x, y) {
     spade.className = "spade";
     spade.innerText = "♠";
 
-    const size = 14 + Math.random() * 24;
+    const size = 24 + Math.random() * 36;
 
     spade.style.position = "absolute";
     spade.style.left = `${x + (Math.random() * 15 - 7.5)}px`; 
