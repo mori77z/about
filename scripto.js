@@ -72,29 +72,48 @@ function setLanguage(lang) {
 // Set default language on page load
 window.onload = () => setLanguage('en');
 
-document.addEventListener("click", function (e) {
-  for (let i = 0; i < 5; i++) {
+function createSpades(x, y) {
+  for (let i = 0; i < 2; i++) {
     const spade = document.createElement("div");
     spade.className = "spade";
     spade.innerText = "♠";
-    
+
     const size = 10 + Math.random() * 10;
-    const color = Math.random() > 0.5 ? "rgb(255, 0, 0)" : "rgb(255, 255, 0)";
-    
-    spade.style.left = `${e.clientX + (Math.random() * 40 - 20)}px`;
-    spade.style.top = `${e.clientY + (Math.random() * 40 - 20)}px`;
+
+    spade.style.position = "absolute";
+    spade.style.left = `${x + (Math.random() * 40 - 20)}px`;
+    spade.style.top = `${y + (Math.random() * 40 - 20)}px`;
     spade.style.fontSize = `${size}px`;
-    spade.style.color = color;
+    spade.style.color = "black";
+    spade.style.pointerEvents = "none";
+    spade.style.transition = "all 0.8s ease";
 
     document.body.appendChild(spade);
 
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       spade.style.opacity = "0";
       spade.style.transform = "translateY(-20px)";
-    }, 10);
+    });
 
     setTimeout(() => {
       spade.remove();
     }, 800);
   }
+}
+
+// Klick
+document.addEventListener("click", (e) => {
+  createSpades(e.clientX, e.clientY);
+});
+
+// Drag & Swipe
+let isDragging = false;
+document.addEventListener("mousedown", () => isDragging = true);
+document.addEventListener("mouseup", () => isDragging = false);
+document.addEventListener("mousemove", (e) => {
+  if (isDragging) createSpades(e.clientX, e.clientY);
+});
+document.addEventListener("touchmove", (e) => {
+  const touch = e.touches[0];
+  createSpades(touch.clientX, touch.clientY);
 });
