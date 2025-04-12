@@ -81,19 +81,19 @@ function createSpades(x, y) {
     const size = 10 + Math.random() * 10;
 
     spade.style.position = "absolute";
-    spade.style.left = `${x + (Math.random() * 5 - 2.5)}px`;  // Nähe zum Cursor
-    spade.style.top = `${y + (Math.random() * 5 - 2.5)}px`;    // Nähe zum Cursor
+    spade.style.left = `${x + (Math.random() * 15 - 7.5)}px`; 
+    spade.style.top = `${y + (Math.random() * 15 - 7.5)}px`;   
     spade.style.fontSize = `${size}px`;
     spade.style.color = "black";
     spade.style.pointerEvents = "none";
-    spade.style.transition = "all 1s ease";  // Langsame Fallbewegung
+    spade.style.transition = "all 1s ease";  
 
     document.body.appendChild(spade);
 
     // Spade fällt nach unten
     requestAnimationFrame(() => {
       spade.style.opacity = "0";
-      spade.style.transform = "translateY(50px)";  // Nach unten bewegen
+      spade.style.transform = "translateY(50px)";  
     });
 
     setTimeout(() => {
