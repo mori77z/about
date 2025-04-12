@@ -103,7 +103,12 @@ body {
 }
 
 .bio {
-    text-align: justify; /* für Blocksatz */
+    text-align: justify;
+    max-width: 600px;
+}
+
+.bio {
+    text-align: justify;
 }
 
 .language-buttons {
