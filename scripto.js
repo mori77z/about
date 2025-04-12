@@ -81,23 +81,24 @@ function createSpades(x, y) {
     const size = 10 + Math.random() * 10;
 
     spade.style.position = "absolute";
-    spade.style.left = `${x + (Math.random() * 40 - 20)}px`;
-    spade.style.top = `${y + (Math.random() * 40 - 20)}px`;
+    spade.style.left = `${x + (Math.random() * 5 - 2.5)}px`;  // Nähe zum Cursor
+    spade.style.top = `${y + (Math.random() * 5 - 2.5)}px`;    // Nähe zum Cursor
     spade.style.fontSize = `${size}px`;
     spade.style.color = "black";
     spade.style.pointerEvents = "none";
-    spade.style.transition = "all 0.8s ease";
+    spade.style.transition = "all 1s ease";  // Langsame Fallbewegung
 
     document.body.appendChild(spade);
 
+    // Spade fällt nach unten
     requestAnimationFrame(() => {
       spade.style.opacity = "0";
-      spade.style.transform = "translateY(-20px)";
+      spade.style.transform = "translateY(50px)";  // Nach unten bewegen
     });
 
     setTimeout(() => {
       spade.remove();
-    }, 800);
+    }, 1000);  // Entfernen nach 1 Sekunde
   }
 }
 
