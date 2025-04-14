@@ -78,11 +78,15 @@ function createSpades(x, y) {
     spade.className = "spade";
     spade.innerText = "♠";
 
-    const size = 24 + Math.random() * 36;
+    // Adjust size to make it smaller
+    const size = 16 + Math.random() * 24; // Smaller size range
 
     spade.style.position = "absolute";
-    spade.style.left = `${x + (Math.random() * 24 - 12)}px`; 
-    spade.style.top = `${y + (Math.random() * 24 - 12)}px`;   
+
+    // Adjust positioning to move them further apart
+    spade.style.left = `${x + (Math.random() * 50 - 25)}px`; // Wider horizontal range
+    spade.style.top = `${y + (Math.random() * 50 - 25)}px`;  // Wider vertical range
+
     spade.style.fontSize = `${size}px`;
     spade.style.color = "black";
     spade.style.pointerEvents = "none";
@@ -90,7 +94,7 @@ function createSpades(x, y) {
 
     document.body.appendChild(spade);
 
-    // Spade fällt nach unten
+    // Spade falls downward
     requestAnimationFrame(() => {
       spade.style.opacity = "0";
       spade.style.transform = "translateY(50px)";  
@@ -98,7 +102,7 @@ function createSpades(x, y) {
 
     setTimeout(() => {
       spade.remove();
-    }, 1000);  // Entfernen nach 1 Sekunde
+    }, 1000);  // Remove after 1 second
   }
 }
 
