@@ -141,7 +141,9 @@ body {
   opacity: 1;
   font-family: serif;
   z-index: 9999;
+  color: black;
 }
+
 
 @media (min-width: 768px) {
     .header-container {
@@ -176,6 +178,6 @@ body {
         color: white;
     }
     .spade {
-        color: white;
+        color: red;
 }
 }
