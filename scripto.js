@@ -81,8 +81,8 @@ function createSpades(x, y) {
     const size = 24 + Math.random() * 36;
 
     spade.style.position = "absolute";
-    spade.style.left = `${x + (Math.random() * 15 - 7.5)}px`; 
-    spade.style.top = `${y + (Math.random() * 15 - 7.5)}px`;   
+    spade.style.left = `${x + (Math.random() * 24 - 12)}px`; 
+    spade.style.top = `${y + (Math.random() * 24 - 12)}px`;   
     spade.style.fontSize = `${size}px`;
     spade.style.color = "black";
     spade.style.pointerEvents = "none";
