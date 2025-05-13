@@ -3,26 +3,11 @@ body {
     background: white;
     display: flex;
     flex-direction: column;
-    /*font-family: 'Moritz Sans', sans-serif;*/
     font-family: Helvetica,  Arial, sans-serif;
     margin: 0;
     padding-bottom: 40px;
   }
 
- /* @font-face {
-    font-family: 'Moritz Sans';
-    src: url('https://moritzgauss.com/assets/moritzsans-condensed-webfont.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Moritz Sans Neue Bold';
-    src: url('https://moritzgauss.com/assets/moritzsans-neue-condensed-bold.woff') format('woff');
-  } */
-
-::selection {
-  background: yellow; 
-  color: red; 
-}
 
 .header-container {
     display: flex;
@@ -38,19 +23,18 @@ body {
 .logo {
     display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding-top: 10px;
 }
 
 .logo a {
-    /*font-family: 'Moritz Sans Neue Bold', sans-serif;*/
     font-family: Helvetica,  Arial, sans-serif;
-    font-size: 34px;
+    font-size: 2em;
     font-weight: normal;
     line-height: 1;
     color: black;
-    letter-spacing: -3px;
+    letter-spacing: -0.075;
     white-space: nowrap;
     box-sizing: border-box; 
     text-decoration: none;
@@ -74,7 +58,7 @@ body {
 }
 
 .title {
-    font-size: 28px;
+    font-size: 1.8em;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -96,11 +80,10 @@ body {
         padding: 20px;
     }
     .logo a {
-        font-size: 72px;
-        letter-spacing: -5px;
+        font-size: 5em;
     }
     .title {
-        font-size: 36px;
+        font-size: 2.4em;
     }
 }
 @media (prefers-color-scheme: dark) {
