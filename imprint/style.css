@@ -106,6 +106,9 @@ section {
     .logo a {
         color: white;
     }
+    .go-back {
+        border: 2px solid white;
+    }
     nav a {
         color: white;
     }
