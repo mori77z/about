@@ -72,8 +72,7 @@ body {
 }
 
 section {
-  padding-left: 10px;
-  padding-right: 14px;
+  padding: 20px;
 }
 
 .language-buttons {
@@ -98,10 +97,6 @@ section {
     .title {
         font-size: 2.4em;
     }
-      section {
-    padding-left: 20px;
-    padding-right: 24px;
-  }
 }
 @media (prefers-color-scheme: dark) {
     body {
