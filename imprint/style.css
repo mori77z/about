@@ -70,6 +70,11 @@ body {
     padding-right: 20px;
 }
 
+section {
+  padding-left: 10px;
+  padding-right: 14px;
+}
+
 .language-buttons {
     text-align: left;
     padding-left: 20px;
@@ -92,6 +97,10 @@ body {
     .title {
         font-size: 2.4em;
     }
+      section {
+    padding-left: 20px;
+    padding-right: 24px;
+  }
 }
 @media (prefers-color-scheme: dark) {
     body {
