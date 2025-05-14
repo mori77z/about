@@ -8,6 +8,13 @@ body {
     padding-bottom: 40px;
   }
 
+@font-face {
+  font-family: 'Snell';
+  src: url('/assets/Snell-Roundhand-Script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 ::selection {
   background: yellow; 
   color: red; 
