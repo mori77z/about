@@ -8,13 +8,6 @@ body {
     padding-bottom: 40px;
   }
 
-@font-face {
-  font-family: 'Snell';
-  src: url('/assets/Snell-Roundhand-Script.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 ::selection {
   background: yellow; 
   color: red; 
@@ -53,28 +46,22 @@ body {
     cursor: pointer;
 }
 
-.logo a:hover {
-    font-family: Snell, serif;
-    font-style: italic;
-    letter-spacing: -2px;
-    padding-right: 4px;
-}
-
 
 .go-back {
   display: inline-block;
   border: 2px solid black;
   border-radius: 50%;
-  width: 2.2em;
-  height: 2.2em;
+  width: 2em;
+  height: 2em;
   text-align: center;
-  line-height: 28px;
+  line-height: 1;
   text-decoration: none;
   font-size: 2em;
 }
 
 .go-back a {
     text-decoration: none;
+    color: black;
 }
 
 .name {
