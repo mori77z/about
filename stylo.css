@@ -65,8 +65,8 @@ body {
 
 .name {
     font-family: "Times New Roman", Times, serif;
-    font-weight: 600;
-    font-size: 1.8em;
+    margin-bottom: 0;
+    font-size: 1.6em;
 }
 
 .contact-details {
@@ -157,7 +157,7 @@ body {
         font-size: 72px;
     }
     .name {
-        font-size: 2.4em;
+        font-size: 2em;
     }
 }
 @media (prefers-color-scheme: dark) {
