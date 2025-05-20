@@ -64,9 +64,10 @@ body {
 }
 
 .name {
-    font-family: "Times New Roman", Times, serif;
     margin-bottom: 0;
-    font-size: 1.6em;
+    font-weight: 500;
+    letter-spacing: -0.075em;
+    font-size: 1.8em;
 }
 
 .contact-details {
