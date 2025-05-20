@@ -58,6 +58,10 @@ body {
     color: black;
 }
 
+.go-back a:hover {
+    font-family: Snell, serif;
+}
+
 .name {
     margin-bottom: 0;
     font-weight: 300;
