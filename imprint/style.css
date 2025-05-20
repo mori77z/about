@@ -51,11 +51,16 @@ body {
   line-height: 1;
   text-decoration: none;
   font-size: 2em;
+  border: 2px solid black;
 }
 
 .go-back a {
     text-decoration: none;
     color: black;
+}
+
+.go-back a:hover {
+    font-family: Snell, serif;
 }
 
 .title {
