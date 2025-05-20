@@ -13,6 +13,13 @@ body {
   color: red; 
 }
 
+  @font-face {
+      font-family: 'Snell';
+      src: url('/assets/Snell-Roundhand-Script.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
 .header-container {
     position: sticky;
     display: flex;
