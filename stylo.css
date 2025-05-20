@@ -80,6 +80,8 @@ body {
 }
 .contact-details p {
     margin: 5px 0;
+    display: inline-block;
+    text-align: center;
 }
 
 .contact-details a {
