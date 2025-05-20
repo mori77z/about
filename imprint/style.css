@@ -34,7 +34,6 @@ body {
 }
 
 .logo a {
-    font-family: "Almari", sans-serif;
     font-size: 2em;
     font-weight: normal;
     line-height: 1;
@@ -49,11 +48,6 @@ body {
 
 .go-back {
   display: inline-block;
-  border: 2px solid black;
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-  text-align: center;
   line-height: 1;
   text-decoration: none;
   font-size: 2em;
