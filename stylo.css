@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background: white;
+    background: #ddd;
     display: flex;
     flex-direction: column;
     font-family: Helvetica, Arial, sans-serif;
@@ -57,10 +57,6 @@ body {
   display: inline-block;
   line-height: 1;
   font-size: 2em;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 2px solid black;
 }
 
 .go-back a {
@@ -69,7 +65,7 @@ body {
 }
 
 .go-back a:hover {
-    font-family: Snell, serif;
+    font-family: "Snell", serif;
 }
 
 .name {
@@ -174,17 +170,13 @@ body {
         font-size: 2em;
     }
 }
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     body {
         background-color: #000;
         color: #fff;
     }
     .logo a {
         color: white;
-    }
-    .go-back {
-        border: 2px solid white;
-          background-color: rgba(0, 0, 0, 0.1);
     }
     nav a {
         color: white;
@@ -201,4 +193,4 @@ body {
     .spade {
   color: white !important;
 }
-}
+}*/
