@@ -116,6 +116,7 @@ body {
 
 .bio {
     text-align: justify;
+    text-wrap: pretty
     max-width: 600px;
 }
 
