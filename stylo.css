@@ -19,6 +19,13 @@ body {
       font-weight: normal;
       font-style: normal;
     }
+  
+    @font-face {
+      font-family: 'Helvetica';
+      src: url('/assets/Helvetica.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
 
 .header-container {
     position: sticky;
@@ -42,30 +49,18 @@ body {
 
 .logo a {
     font-size: 2em;
-    font-weight: normal;
+    font-weight: 600;
     line-height: 1;
-    color: black;
-    letter-spacing: -0.075;
+    color: rgba( 255, 255, 255, 0.4);
+    letter-spacing: -0.1;
     white-space: nowrap;
     box-sizing: border-box; 
     text-decoration: none;
     cursor: pointer;
 }
 
-
-.go-back {
-  display: inline-block;
-  line-height: 1;
-  font-size: 2em;
-}
-
-.go-back a {
-    text-decoration: none;
-    color: black;
-}
-
-.go-back a:hover {
-    font-family: "Snell", serif;
+.logo a:hover {
+    font-family: Snell, serif;
 }
 
 .name {
