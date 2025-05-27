@@ -55,6 +55,7 @@ body {
 
 .logo a:hover {
     font-family: Snell, serif;
+    font-size: 2.1em;
 }
 
 .title {
@@ -87,6 +88,9 @@ section {
     .logo a {
         font-size: 5em;
     }
+.logo a:hover {
+    font-size: 5.1em;
+}
     .title {
         font-size: 2.4em;
     }
