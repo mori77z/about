@@ -61,6 +61,7 @@ body {
 
 .logo a:hover {
     font-family: Snell, serif;
+    font-size: 2.1em;
 }
 
 .name {
@@ -161,6 +162,9 @@ body {
     }
     .logo a {
         font-size: 72px;
+    }
+    .logo a:hover {
+    font-size: 5.1em;
     }
     .name {
         font-size: 2em;
