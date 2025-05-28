@@ -1,12 +1,16 @@
 body {
     width: 100%;
-    background: white, #fc4022;
+    background: white;
     display: flex;
     flex-direction: column;
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding-bottom: 40px;
   }
+
+html {
+  background: #fc4022;
+}
 
 ::selection {
   background: yellow; 
@@ -44,6 +48,7 @@ body {
 .logo a {
     font-size: 2em;
     font-weight: 500;
+    color: black;
     line-height: 1;
     letter-spacing: -0.075em;
     white-space: nowrap;
