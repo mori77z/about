@@ -99,9 +99,86 @@ function createSpades(x, y) {
     }, 1000);
   }
 }
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let mouseX = 0, mouseY = 0;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Create initial particles
+        for (let i = 0; i < 50; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: 0,
+                vy: 0,
+                size: Math.random() * 100 + 50
+            });
+        }
+
+        function animate() {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach(p => {
+                // Calculate direction to mouse
+                const dx = mouseX - p.x;
+                const dy = mouseY - p.y;
+                const dist = Math.sqrt(dx * dx + dy * dy) + 0.1;
+
+                // Update velocity with smooth following
+                p.vx += (dx / dist) * 0.2;
+                p.vy += (dy / dist) * 0.2;
+
+                // Add some randomness
+                p.vx += (Math.random() - 0.5) * 0.3;
+                p.vy += (Math.random() - 0.5) * 0.3;
+
+                // Apply damping
+                p.vx *= 0.98;
+                p.vy *= 0.98;
+
+                // Update position
+                p.x += p.vx;
+                p.y += p.vy;
+
+                // Draw particle
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 165, 0, 0.15)';
+                ctx.fill();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        function updateMousePosition(e) {
+            mouseX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+            mouseY = e.type.includes('touch') ? e.touches[0].clientY : e.clientY;
+        }
+
+        // Event listeners
+        canvas.addEventListener('mousemove', updateMousePosition);
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            updateMousePosition(e);
+        });
+
+        // Set initial mouse position
+        mouseX = canvas.width / 2;
+        mouseY = canvas.height / 2;
+
+        animate();
 
 // Klick
-document.addEventListener("click", (e) => {
+/*document.addEventListener("click", (e) => {
   createSpades(e.clientX, e.clientY);
 });
 
@@ -115,4 +192,4 @@ document.addEventListener("mousemove", (e) => {
 document.addEventListener("touchmove", (e) => {
   const touch = e.touches[0];
   createSpades(touch.clientX, touch.clientY);
-});
+});*/
