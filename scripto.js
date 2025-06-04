@@ -72,83 +72,78 @@ function setLanguage(lang) {
 // Set default language on page load
 window.onload = () => setLanguage('en');
 
-const canvas = document.getElementById('canvas');
+const canvas = document.getElementById('particleCanvas');
 const ctx = canvas.getContext('2d');
-
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-let mouseX = canvas.width / 2;
-let mouseY = canvas.height / 2;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 let particles = [];
-for (let i = 0; i < 50; i++) {
-  particles.push({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    vx: 0,
-    vy: 0,
-    size: Math.random() * 100 + 50
-  });
+let isDragging = false;
+
+// Partikel erzeugen
+function createParticles(x, y) {
+  for (let i = 0; i < 10; i++) {
+    particles.push({
+      x: x,
+      y: y,
+      vx: (Math.random() - 0.5) * 2,
+      vy: (Math.random() - 0.5) * 2,
+      life: 60
+    });
+  }
 }
 
-function animate() {
-  ctx.fillStyle = 'rgba(252, 64, 34, 0.15)';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  particles.forEach(p => {
-    const dx = mouseX - p.x;
-    const dy = mouseY - p.y;
-    const dist = Math.sqrt(dx * dx + dy * dy) + 0.1;
-
-    p.vx += (dx / dist) * 0.2;
-    p.vy += (dy / dist) * 0.2;
-
-    p.vx += (Math.random() - 0.5) * 0.3;
-    p.vy += (Math.random() - 0.5) * 0.3;
-
-    p.vx *= 0.98;
-    p.vy *= 0.98;
-
+// Zeichenfunktion
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'rgba(252, 64, 34, 0.15)'; // #fc4022 mit 15% Deckkraft
+  particles.forEach((p, i) => {
     p.x += p.vx;
     p.y += p.vy;
-
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(252, 64, 34, 0.15)'; 
-    ctx.fill();
+    p.life--;
+    if (p.life <= 0) {
+      particles.splice(i, 1);
+    } else {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 5, 0, 2 * Math.PI);
+      ctx.fill();
+    }
   });
-
-  requestAnimationFrame(animate);
+  requestAnimationFrame(drawParticles);
 }
 
-function activateCanvas() {
-  if (canvas.style.display === 'none') {
-    canvas.style.display = 'block';
-    animate();
-  }
+// Aktivieren bei Maus & Touch
+function startDrag(x, y) {
+  canvas.style.display = 'block';
+  isDragging = true;
+  createParticles(x, y);
+}
+function endDrag() {
+  isDragging = false;
+  setTimeout(() => canvas.style.display = 'none', 300);
+}
+function moveDrag(x, y) {
+  if (isDragging) createParticles(x, y);
 }
 
+// Mouse Events
+document.addEventListener('mousedown', e => startDrag(e.clientX, e.clientY));
+document.addEventListener('mouseup', endDrag);
+document.addEventListener('mousemove', e => moveDrag(e.clientX, e.clientY));
 
-
-canvas.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
+// Touch Events
+document.addEventListener('touchstart', e => {
+  const touch = e.touches[0];
+  startDrag(touch.clientX, touch.clientY);
+});
+document.addEventListener('touchend', endDrag);
+document.addEventListener('touchmove', e => {
+  const touch = e.touches[0];
+  moveDrag(touch.clientX, touch.clientY);
 });
 
-canvas.addEventListener('touchmove', e => {
-  if (e.touches.length > 0) {
-    mouseX = e.touches[0].clientX;
-    mouseY = e.touches[0].clientY;
-  }
-}, { passive: true });
-
-document.addEventListener('click', activateCanvas);
-document.addEventListener('touchstart', activateCanvas, { passive: true });
+// Animation starten
+drawParticles();
 
 /*
 function createSpades(x, y) {
