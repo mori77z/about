@@ -144,7 +144,21 @@ body {
     padding: 10px;
     text-align: left;
 }
-
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: blur(50px);
+        }
+        .content {
+            position: relative;
+            color: #333;
+            padding: 2rem;
+            z-index: 1;
+        }
+        
 .spade {
   position: fixed;
   pointer-events: none;
