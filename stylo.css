@@ -85,7 +85,7 @@ body {
 
 .toggle-label {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
   display: inline-block;
   margin-top: 10px;
