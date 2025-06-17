@@ -1,9 +1,9 @@
 body {
     width: 100%;
-    background: white, #fc4022;
+    background: white;
     display: flex;
     flex-direction: column;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Times, serif;
     margin: 0;
     padding-bottom: 40px;
   }
@@ -16,13 +16,6 @@ body {
   @font-face {
       font-family: 'Snell';
       src: url('/assets/Snell-Roundhand-Script.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Helvetica';
-      src: url('/assets/Helvetica.woff') format('woff');
       font-weight: normal;
       font-style: normal;
     }
@@ -83,23 +76,6 @@ body {
     color: black;
 }
 
-.toggle-label {
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.hidden-links {
-  display: none;
-  margin-top: 10px;
-}
-
-#toggle-private-links:checked ~ .hidden-links {
-  display: block;
-}
-
 .bio-container {
     display: flex;
     flex-direction: column; 
@@ -132,27 +108,6 @@ body {
     color: black;
 }
 
-.cv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 800px;
-    margin: 20px auto;
-    gap: 20px;
-}
-
-.cv div {
-    padding: 10px;
-    text-align: left;
-}
-        
-#canvas {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 
 @media (min-width: 768px) {
     .header-container {
@@ -180,12 +135,6 @@ body {
         color: white;
     }
     .contact-details a {
-        color: white;
-    }
-    .toggle-label {
-      color: white;
-    }
-    .imprint-link a {
         color: white;
     }
 }
