@@ -3,7 +3,7 @@ body {
     background: white;
     display: flex;
     flex-direction: column;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Times, serif;
     margin: 0;
     padding-bottom: 40px;
   }
