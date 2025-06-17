@@ -103,10 +103,6 @@ section {
     .logo a {
         color: white;
     }
-    .go-back {
-        border: 2px solid white;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
     nav a {
         color: white;
     }
