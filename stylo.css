@@ -68,6 +68,16 @@ body {
     font-weight: 600;
 }
 
+#hover-image {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+
 .contact-details {
     text-align: center;
 }
