@@ -72,18 +72,37 @@ function setLanguage(lang) {
 // Set default language on page load
 window.onload = () => setLanguage('en');
 
-  const name = document.getElementById('hover-name');
+ const name = document.getElementById('hover-name');
   const image = document.getElementById('hover-image');
+
+  let visible = false;
 
   name.addEventListener('mouseenter', () => {
     image.style.opacity = 1;
+    visible = true;
   });
 
   name.addEventListener('mouseleave', () => {
     image.style.opacity = 0;
+    visible = false;
   });
 
   name.addEventListener('mousemove', (e) => {
-    image.style.left = `${e.clientX + 20}px`; // offset to the right of cursor
-    image.style.top = `${e.clientY + 20}px`;  // offset below the cursor
+    image.style.left = `${e.clientX + 20}px`;
+    image.style.top = `${e.clientY + 20}px`;
+  });
+
+  document.addEventListener('click', () => {
+    if (visible) {
+      image.style.opacity = 0;
+      visible = false;
+    }
+  });
+
+  // Optional: also hide on touch anywhere
+  document.addEventListener('touchstart', () => {
+    if (visible) {
+      image.style.opacity = 0;
+      visible = false;
+    }
   });
