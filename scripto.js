@@ -72,46 +72,18 @@ function setLanguage(lang) {
 // Set default language on page load
 window.onload = () => setLanguage('en');
 
-/*
-function createSpades(x, y) {
-  for (let i = 0; i < 2; i++) {
-    const spade = document.createElement("div");
-    spade.className = "spade";
-    spade.innerText = "♠";
+  const name = document.getElementById('hover-name');
+  const image = document.getElementById('hover-image');
 
-    const size = 16 + Math.random() * 24;
+  name.addEventListener('mouseenter', () => {
+    image.style.opacity = 1;
+  });
 
-    spade.style.position = "absolute";
-    spade.style.left = `${x + (Math.random() * 50 - 25)}px`;
-    spade.style.top = `${y + (Math.random() * 50 - 25)}px`;
-    spade.style.fontSize = `${size}px`;
-    spade.style.pointerEvents = "none";
-    spade.style.transition = "all 1s ease";
+  name.addEventListener('mouseleave', () => {
+    image.style.opacity = 0;
+  });
 
-    document.body.appendChild(spade);
-
-    requestAnimationFrame(() => {
-      spade.style.opacity = "0";
-      spade.style.transform = "translateY(50px)";
-    });
-
-    setTimeout(() => {
-      spade.remove();
-    }, 1000);
-  }
-}
-document.addEventListener("click", (e) => {
-  createSpades(e.clientX, e.clientY);
-});
-
-// Drag & Swipe
-let isDragging = false;
-document.addEventListener("mousedown", () => isDragging = true);
-document.addEventListener("mouseup", () => isDragging = false);
-document.addEventListener("mousemove", (e) => {
-  if (isDragging) createSpades(e.clientX, e.clientY);
-});
-document.addEventListener("touchmove", (e) => {
-  const touch = e.touches[0];
-  createSpades(touch.clientX, touch.clientY);
-});*/
+  name.addEventListener('mousemove', (e) => {
+    image.style.left = `${e.clientX + 20}px`; // offset to the right of cursor
+    image.style.top = `${e.clientY + 20}px`;  // offset below the cursor
+  });
