@@ -72,37 +72,48 @@ function setLanguage(lang) {
 // Set default language on page load
 window.onload = () => setLanguage('en');
 
- const name = document.getElementById('hover-name');
+
+  const name = document.getElementById('hover-name');
   const image = document.getElementById('hover-image');
 
   let visible = false;
 
-  name.addEventListener('mouseenter', () => {
+  function showImage() {
     image.style.opacity = 1;
     visible = true;
-  });
+  }
 
-  name.addEventListener('mouseleave', () => {
+  function hideImage() {
     image.style.opacity = 0;
     visible = false;
+  }
+
+  // Desktop hover
+  name.addEventListener('mouseenter', showImage);
+  name.addEventListener('mouseleave', hideImage);
+
+  // Mobile tap (and desktop fallback)
+  name.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent immediate hiding
+    showImage();
   });
 
+  // Cursor follow on desktop
   name.addEventListener('mousemove', (e) => {
     image.style.left = `${e.clientX + 20}px`;
     image.style.top = `${e.clientY + 20}px`;
   });
 
-  document.addEventListener('click', () => {
-    if (visible) {
-      image.style.opacity = 0;
-      visible = false;
+  // Tap/click outside to hide (mobile and desktop)
+  document.addEventListener('click', (e) => {
+    if (visible && !name.contains(e.target)) {
+      hideImage();
     }
   });
 
-  // Optional: also hide on touch anywhere
-  document.addEventListener('touchstart', () => {
-    if (visible) {
-      image.style.opacity = 0;
-      visible = false;
+  // Touch support: tap anywhere else hides the image
+  document.addEventListener('touchstart', (e) => {
+    if (visible && !name.contains(e.target)) {
+      hideImage();
     }
   });
