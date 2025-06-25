@@ -49,8 +49,6 @@ body {
     white-space: nowrap;
     box-sizing: border-box; 
     text-decoration: none;
-    cursor: pointer;
-    mix-blend-mode: difference;
 }
 
 .logo a:hover {
