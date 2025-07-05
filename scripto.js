@@ -10,7 +10,7 @@ function goBack() {
 
 const translations = {
   "en": `
-    <p>Moritz Gauss, born in Stuttgart and currently based in Offenbach am Main, works in digital art, web and user interface/user experience design, and develops concepts for objects and products. Personal impressions from digital and urban environments form the foundation of his creative work, which he translates into new interactive concepts. As a designer working in the digital space, he facilitates collaborative and interdisciplinary projects that are accessible anytime and from anywhere.</p>
+    <p>Moritz Gauss, born in Stuttgart and currently based in Offenbach am Main, works in digital art, web and user interface/user experience design, also he develops concepts for objects and products. Personal impressions from digital and urban environments form the foundation of his creative work, which he translates into new interactive concepts. As a designer working in the digital space, he enables collaborative and interdisciplinary projects that are accessible anytime and from anywhere.</p>
     <p>After completing his bachelor's degree in industrial design at Ostbayerische Technische Hochschule Regensburg, he is currently pursuing a master's degree in design at Hochschule für Gestaltung Offenbach. In 2023, Moritz had the opportunity to work for ten months as part of a residency at M26 in Regensburg.</p>
   `,
   "de": `
