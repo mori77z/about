@@ -8,15 +8,6 @@ body {
     padding-bottom: 40px;
   }
 
-::selection {
-  background: yellow; 
-  color: red; 
-}
-
-[data-hidden="true"] {
-  display: block;
-}
-
 @media screen and (max-device-width: 0px) {
   [data-hidden="true"] {
     display: none;
