@@ -13,6 +13,16 @@ body {
   color: red; 
 }
 
+[data-hidden="true"] {
+  display: block;
+}
+
+@media screen and (max-device-width: 0px) {
+  [data-hidden="true"] {
+    display: none;
+  }
+}
+
   @font-face {
       font-family: 'Snell';
       src: url('/assets/Snell-Roundhand-Script.woff') format('woff');
